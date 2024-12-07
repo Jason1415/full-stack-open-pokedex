@@ -37,7 +37,7 @@ jobs:
 
       # Run Playwright Tests
       - name: Run Playwright Tests
-        run: npx playwright test
+        run: npm run test:e2e
 
       # Build the Project
       - name: Build Project
