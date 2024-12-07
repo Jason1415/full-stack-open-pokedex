@@ -33,7 +33,7 @@ jobs:
 
       # Run ESLint
       - name: Run ESLint
-        run: npm run lint
+        run: npm run eslint
 
       # Run Playwright Tests
       - name: Run Playwright Tests
