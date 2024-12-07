@@ -5,8 +5,8 @@ on:
     branches:
       - main
   pull_request:
-    branches:
-      - main
+    branches: [main]
+    types: [opened, synchronize]
 
 jobs:
   build:
@@ -46,6 +46,7 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     needs: build # Ensure deployment runs only if build job succeeds
+    if: ${{ github.event_name == 'push' }}
 
     steps:
       # Checkout the repository
