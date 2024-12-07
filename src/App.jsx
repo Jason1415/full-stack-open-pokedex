@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <div>
-      <h2>Pokedex</h2>
+      <h2>Pokedex 1.0</h2>
       <Router>
         <Routes>
           <Route path="/" element={<PokemonList pokemonList={pokemonList} />}></Route>
