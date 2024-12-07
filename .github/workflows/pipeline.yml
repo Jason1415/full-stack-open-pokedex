@@ -44,7 +44,7 @@ jobs:
         run: npm run build
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: build # Ensure deployment runs only if build job succeeds
 
     steps:
