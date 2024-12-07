@@ -44,15 +44,18 @@ const App = () => {
   }
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<PokemonList pokemonList={pokemonList} />}></Route>
-        <Route
-          path="/pokemon/:name"
-          element={<PokemonDetailWrapper pokemonList={pokemonList} />}
-        />
-      </Routes>
-    </Router>
+    <div>
+      <h2>Pokedex</h2>
+      <Router>
+        <Routes>
+          <Route path="/" element={<PokemonList pokemonList={pokemonList} />}></Route>
+          <Route
+            path="/pokemon/:name"
+            element={<PokemonDetailWrapper pokemonList={pokemonList} />}
+          />
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
